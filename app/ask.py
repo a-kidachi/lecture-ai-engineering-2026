@@ -15,6 +15,7 @@
 """
 
 import argparse
+import time
 
 from google import genai
 from google.genai import errors
@@ -39,10 +40,17 @@ def show_usage(response) -> None:
 def ask(question: str) -> str:
     """会話履歴を使わず、1回だけ質問する。"""
     client = genai.Client(api_key=get_api_key())
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=question,
-    )
+
+    start = time.perf_counter()
+
+    try:
+        response = client.models.generate_content(
+            model=MODEL,
+            contents=question,
+        )
+    finally:
+        elapsed = time.perf_counter() - start
+        print(f"API呼び出し時間: {elapsed:.2f}秒")
 
     show_usage(response)
     return response.text or ""
@@ -70,11 +78,16 @@ def chat_loop() -> None:
             continue
 
         # これまでの会話履歴を使って質問する
-        response = chat.send_message(question)
+        start = time.perf_counter()
+
+        try:
+            response = chat.send_message(question)
+        finally:
+            elapsed = time.perf_counter() - start
+            print(f"API呼び出し時間: {elapsed:.2f}秒")
 
         show_usage(response)
         print(f"\nAI> {response.text or '本文が返りませんでした。'}")
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="LLMに質問する")
