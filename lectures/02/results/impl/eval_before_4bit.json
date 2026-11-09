@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "before_4bit",
+    "n": 21,
+    "format_rate": 0.7619047619047619,
+    "content_rate": 0.3333333333333333,
+    "both_rate": 0.3333333333333333,
+    "seconds": 35.5
+  },
+  "rows": [
+    {
+      "question": "参加人数の上限は？",
+      "raw": "{\"answer\": \"32人\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "この大会で受け付ける参加人数は最大何人ですか",
+      "raw": "{\"answer\": \"32\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "参加者は何名まで募集していますか",
+      "raw": "{\"answer\": \"32\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "大会の年齢条件と同意のルールは？",
+      "raw": "{\"answer\": \"16歳以上\", \"needs_review\": \"true\"}",
+      "format_ok": false,
+      "format_reason": "wrong_type",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "参加の最低年齢と保護者の同意が必要な年齢を教えてください",
+      "raw": "{\"answer\": \"18歳\", \"needs_review\": \"true\"}",
+      "format_ok": false,
+      "format_reason": "wrong_type",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "何歳以上が対象で、18歳未満にはどんな条件がありますか",
+      "raw": "{\"answer\": \"16歳以上\", \"needs_review\": \"true\"}",
+      "format_ok": false,
+      "format_reason": "wrong_type",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "受付の時間帯は？",
+      "raw": "{\"answer\": \"10:00〜10:30\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "受付は何時に始まり、何時に終わりますか",
+      "raw": "{\"answer\": \"10:00〜10:30\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "参加者が会場で受付できる時間を教えてください",
+      "raw": "{\"answer\": \"10:00〜10:30\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ゲーム機とモニターとコントローラーの準備担当は？",
+      "raw": "{\"answer\": \"主催者\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ゲーム機とモニターは会場にありますか、コントローラーは持参ですか",
+      "raw": "{\"answer\": \"ゲーム機とモニターは会場にあります。コントローラーは持参してください。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "主催者が準備する機材と参加者が用意する機材を知りたいです",
+      "raw": "```json\n{\"answer\": \"主催者: ゲーム機、モニター、コントローラー、会場受付、会場での食事は禁止、ふた付きの飲み物は持ち込めます。参加者: ゲーム機、モニター、コントローラー、会場受付、会場での食事は禁止、ふた付きの飲み物は持ち込めます。\", \"needs_review\": false}\n```",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "会場の飲食ルールは？",
+      "raw": "{\"answer\": \"禁止\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "食事は許可されていますか、飲み物にはどんな条件がありますか",
+      "raw": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "会場で食べ物を食べてよいですか、飲み物は持ち込めますか",
+      "raw": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "観戦者も参加定員の32人に含まれますか",
+      "raw": "{\"answer\": \"はい\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コントローラーを忘れたら借りられますか",
+      "raw": "{\"answer\": \"借りられます\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "会場内で写真や動画を撮ってもよいですか",
+      "raw": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "会場を出た後に再入場できますか",
+      "raw": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "18歳未満は保護者が会場に同伴する必要がありますか",
+      "raw": "{\"answer\": \"必要\", \"needs_review\": \"true\"}",
+      "format_ok": false,
+      "format_reason": "wrong_type",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "10:30を過ぎて到着した場合は失格になりますか",
+      "raw": "{\"answer\": \"確認が必要\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}
